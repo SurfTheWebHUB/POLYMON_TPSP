@@ -1,0 +1,91 @@
+p {
+  font-family: Pixelify Sans;
+  color: white
+}
+h1 {
+  max-width: 49rem;
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 700;
+  margin: 0.25em auto;
+}
+h2 {
+  max-width: 49rem;
+  margin: 1.4em auto;
+}
+p {
+  line-height: 1.5em;
+  margin: 1.4em auto;
+  max-width: 49rem;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  
+  
+}
+
+header {
+  background-color: #192024;
+  position: relative;
+  top: -20px;
+  left: -10px;
+  width: 150%;
+  box-shadow: #000000;
+  
+  
+}
+
+#question {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+/* is name property hastag or period for options? */
+
+.logo-container {
+  display: table;
+  
+}
+
+.poly {
+  color: #e94949;
+  font-family: Pixelify Sans;
+  
+  
+}
+
+.mon {
+  color: #8282de;
+  font-family: Pixelify Sans;
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+}
+
+body {
+  background-color: #232e33;
+  transition: opacity 2s ease-in-out;
+  
+}
+
+  body {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

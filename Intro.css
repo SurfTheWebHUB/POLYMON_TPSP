@@ -1,0 +1,98 @@
+h1,
+h2 {
+  font-family: Pixelify Sans;
+  
+}
+
+.new-content {
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s ease-in-out; /* Apply transition for opacity */
+}
+
+.fade-in {
+  opacity: 1 !important; /* Make content visible */
+}
+
+.new-content h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.new-content p {
+  font-size: 1.5em;
+  color: #666;
+}
+
+h1 {
+  color: white;
+}
+
+#q1 {
+  color: white;
+}
+
+#options {
+  color: white;
+}
+
+#question {
+  color: white;
+  position: relative;
+  top: -200px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.poly {
+  color: #e94949;
+  font-size: 170px;
+  position: relative;
+  bottom: -150px;
+  left: -20px;
+
+}
+
+/*Just type here cuz im running it many times */
+/* IT FADES OUT  */
+
+.mon {
+  color: #8282de;
+  font-size: 170px;
+  position: relative;
+  bottom: 90px;
+  left: 105px;
+}
+
+body {
+  background-color: #232e33;
+}
+
+* {
+  font-family: 'Pixelify Sans', sans-serif;
+  
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+
+.splash-screen {
+  font-size: 15px;
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+
+
+
+
