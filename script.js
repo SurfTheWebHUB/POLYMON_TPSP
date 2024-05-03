@@ -27,14 +27,10 @@ function StartIntro() {
   }
 }
 
-  
-
-  
-
 
 function NextPage() {
   
-  window.location.href = "intro.html";
+  window.location.href = "menu(mine).html";
   
 
 }
