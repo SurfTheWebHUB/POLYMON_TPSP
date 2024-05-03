@@ -1,0 +1,65 @@
+body {
+  background-color: #232e33;
+  transition: opacity 2s ease-in-out;
+}
+
+.start {
+  background-color: #232e33;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  padding: 10px 20px;
+  font-size: 75px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  left: 40%;
+  bottom: 230px;
+}
+* {
+  font-family: 'VT323', sans-serif;  
+}
+
+.music {
+  background-color: #232e33;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  padding: 10px 20px;
+  font-size: 75px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  left: 40%;
+  bottom: 50px;
+}
+.start:hover {
+  background-color: white;
+  color: #232e33;
+}
+.music:hover {
+  background-color: white;
+  color: #232e33;
+}
+
+.poly {
+  color: #e94949;
+  font-size: 170px;
+  position: fixed;
+  left: 340px;
+}
+
+/*Just type here cuz im running it many times */
+/* IT FADES OUT  */
+
+.mon {
+  color: #8282de;
+  font-size: 170px;
+  position: fixed;
+  bottom: 200px;
+  left: 405px;
+}
