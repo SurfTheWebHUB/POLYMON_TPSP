@@ -30,7 +30,7 @@ function StartIntro() {
 
 function NextPage() {
   
-  window.location.href = "menu(mine).html";
+  window.location.href = "menu.html";
   
 
 }
