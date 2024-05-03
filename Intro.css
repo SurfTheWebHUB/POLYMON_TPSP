@@ -1,6 +1,6 @@
 h1,
 h2 {
-  font-family: Pixelify Sans;
+  font-family: VT323;
   
 }
 
@@ -27,19 +27,17 @@ h1 {
   color: white;
 }
 
-#q1 {
-  color: white;
-}
-
 #options {
   color: white;
+  position: relative;
+  right: -50px;
 }
 
 #question {
   color: white;
   position: relative;
-  top: -200px;
-  left: 500px;
+  bottom: -100px;
+  left: -400px;
   font-size: 20px;
 }
 
@@ -62,14 +60,14 @@ h1 {
   bottom: 90px;
   left: 105px;
 }
-
+  
 body {
   background-color: #232e33;
+  
 }
 
 * {
-  font-family: 'Pixelify Sans', sans-serif;
-  
+  font-family: 'VT323', sans-serif;  
 }
 
 
