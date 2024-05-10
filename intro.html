@@ -2,7 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -12,18 +14,19 @@
 </head>
 
 <body class="new-content" id="newContent">
-
+<img src="Photo/Image.heic" alt="Idk bro some goofy ahh image" width="1200" height="800">
+  <style>
+    img {
+      position: fixed;
+      top: 75px;
+    }
+  </style>
+  
   <header>
     <h2 class="logo-container"><i class="poly">POLY</i></h2><h2><b class="mon">MON</b></h2>
   </header>
     <div id="question"> </div>
       <div id="options"></div>
-      <div id="options"></div>
-      <style>
-        input[name='q1'] {
-          margin-left: -80px;
-        }
-      </style>
   <br>
  
 
@@ -41,10 +44,23 @@
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
+<audio id="AUD1" autoplay src="gamemusic.mp3"> </audio>
 <body>
   <script src="quiz_data.js"></script>
-  <script src="script.js"> </script>
+  <script src="script.js"> 
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('AUD');
+      var playState = localStorage.getItem('playState');
+
+      if (playState === 'on') {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+    
+  
+  </script>
 </body>
 
 </html>
