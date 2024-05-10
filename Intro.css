@@ -29,8 +29,6 @@ h1 {
 
 #options {
   color: white;
-  position: relative;
-  right: -50px;
 }
 
 #question {
@@ -39,6 +37,7 @@ h1 {
   bottom: -100px;
   left: -400px;
   font-size: 20px;
+  font-family: Pixelify Sans
 }
 
 .poly {
@@ -47,7 +46,7 @@ h1 {
   position: relative;
   bottom: -150px;
   left: -20px;
-
+  font-family: 'Pixelify Sans';
 }
 
 /*Just type here cuz im running it many times */
@@ -59,15 +58,12 @@ h1 {
   position: relative;
   bottom: 90px;
   left: 105px;
+  font-family: 'Pixelify Sans';
 }
   
 body {
   background-color: #232e33;
   
-}
-
-* {
-  font-family: 'VT323', sans-serif;  
 }
 
 
@@ -90,7 +86,9 @@ html {
   transition: opacity 5s ease-in-out;
 }
 
-
-
-
-
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
