@@ -27,11 +27,33 @@ function StartIntro() {
   }
 }
 
+  
+
+  
+
 
 function NextPage() {
   
-  window.location.href = "menu.html";
+  window.location.href = "menu(mine).html";
   
 
 }
+
+
+// Music will toggle when button pressed.
+document.getElementById('music').addEventListener('click', function() {
+  var audio = document.getElementById('AUD');
+  var text = document.getElementById("demo");
+  if (audio.paused) {
+    text.innerHTML = "MUSIC ON";
+    audio.play();
+    localStorage.setItem('playState', 'on');
+  } else {
+    text.innerHTML = "MUSIC OFF";
+    audio.pause();
+    localStorage.setItem('playState', 'off');
+  }
+});
+
+
 
