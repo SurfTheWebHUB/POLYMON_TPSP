@@ -4,6 +4,9 @@
   <link rel="stylesheet" href="menu.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,9 +20,12 @@
   <div id='navbar'>
     <a href="/intro.html"><button class="start">START</button>
     </a>
-    <button class="music">MUSIC</button>
-    
   </div>
-  
+  <div id='navbar'>
+<button id="music">MUSIC</button>
+      <audio id="AUD" autoplay src="gamemusic.mp3"></audio>
+  </div>
+  <p id="demo" style="color: white;"></p>
+  <script src="script.js"></script>
 </body>
 </html>
