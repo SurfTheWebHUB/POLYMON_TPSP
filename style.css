@@ -3,10 +3,6 @@ p {
   color: white
 }
 
-* {
-  font-family: 'VT323', sans-serif;  
-}
-
 h1 {
   max-width: 49rem;
   font-size: 3.5em;
@@ -69,14 +65,18 @@ div {
   text-align: center;
   position: fixed;
   right: -10px;
-  bottom: 500px
+  bottom: 500px;
+  font-family: 'Pixelify Sans';
 }
 
 #options {
   color: white;
   position: fixed;
-  right: -500px;
-  bottom: 450px;
+  /*right: -350px;*/
+  bottom: 375px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
 }
 h1 {
   color: white;
@@ -105,9 +105,7 @@ h1 {
 }
 
 body {
-  background-color: #232e33;
   transition: opacity 2s ease-in-out;
-
 }
 
 body {
