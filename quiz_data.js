@@ -11,80 +11,95 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "8"
     },
     {
-      question: "10x^2 = 100. Find x",
-      options: ["1", "10", "2", "8"],
-      answer: "1"
+      question: "Idk bro what is x...",
+      options: ["1", "2", "x", "y"],
+      answer: "x"
     },
     {
-      question: "5 * 6 = ?",
+      question: "5 x 6 = ?",
       options: ["11", "30", "22", "1"],
       answer: "30"
     },
     {
-      question: "7 * 4 = ?",
+      question: "7 x 4 = ?",
       options: ["27", "11", "28", "54"],
       answer: "28"
     },
     // Additional randomized easy math questions
     // Thx hamza
     {
-      question: "What is 3 + 4?",
-      options: ["6", "7", "8", "9"],
-      answer: "7"
-    },
-    {
-      question: "What is 9 - 5?",
-      options: ["3", "4", "5", "6"],
-      answer: "4"
-    },
-    {
-      question: "What is 6 * 2?",
-      options: ["10", "11", "12", "13"],
-      answer: "12"
-    },
-    {
-      question: "What is 10 / 2?",
-      options: ["3", "4", "5", "6"],
-      answer: "5"
-    },
-    {
-      question: "What is 8 + 2?",
-      options: ["9", "10", "11", "12"],
-      answer: "10"
-    },
-    // Additional randomized easy math questions
-    {
-      question: "What is 15 - 8?",
-      options: ["5", "6", "7", "8"],
-      answer: "7"
-    },
-    {
-      question: "What is 4 * 3?",
-      options: ["9", "10", "11", "12"],
-      answer: "12"
-    },
-    {
-      question: "What is 18 / 3?",
-      options: ["3", "4", "5", "6"],
-      answer: "6"
-    },
-    {
-      question: "What is 10 + 5?",
-      options: ["14", "15", "16", "17"],
-      answer: "15"
-    },
-    {
-      question: "What is 9 * 2?",
-      options: ["16", "17", "18", "19"],
-      answer: "18"
+      question: "What are the roots of this equation: x^2 - 4x + 4 = 0?",
+      options: ["2 and 2", "2 and -2", "2 and -2", "2 and 2"],
+      answer: "2 and -2"
     },
     // Moving on to Quadratics
+    {
+      question: "What is the vertex of the equation x^2 + 2x + 1?",
+      options: ["(1, 1)", "(0, 1)", "(1, 0)", "(0, 0)"],
+      answer: "(0, 1)"
+    },
+    {
+      question: "What is the y-intercept of the equation x^2 + 2x + 1?",
+      options: ["1", "2", "3", "4"],
+      answer: "1"
+    },
     {
       question: "What is x^2 + 5x + 6 in factored form?",
       options: ["(x + 3)(x + 3)", "(x - 2)(x + 3)", "(x + 2)(x + 3)", "(x - 2)(x - 4)"],
       answer: "(x + 2)(x + 3)"
+    },
+    // Two step equations
+      {
+        question: "Solve: 2x + 3 = 9",
+        options: ["2", "3", "4", "5"],
+        answer: "3"
+      },
+      {
+        question: "Solve: 4y - 2 = 10",
+        options: ["2", "3", "4", "5"],
+        answer: "3"
+      },
+      {
+        question: "Solve: 5z + 1 = 21",
+        options: ["4", "5", "6", "7"],
+        answer: "4"
+      },
+      {
+        question: "Solve: 3a - 4 = 8",
+        options: ["3", "4", "5", "6"],
+        answer: "4"
+      },
+      {
+        question: "Solve: 6b + 2 = 14",
+        options: ["1", "2", "3", "4"],
+        answer: "2"
+      },
+    {
+      question: "Calculate the volume: A cube with side length of 3 units",
+      options: ["6", "9", "27", "81"],
+      answer: "27"
+    },
+    {
+      question: "Calculate the volume: A sphere with a radius of 2 units (use 3.14 for π)",
+      options: ["8.08", "16.16", "33.51", "67.02"],
+      answer: "33.51"
+    },
+    {
+      question: "Calculate the volume: A cylinder with a radius of 2 units and height of 5 units (use 3.14 for π)",
+      options: ["6.28", "12.56", "31.4", "62.8"],
+      answer: "62.8"
+    },
+    {
+      question: "Calculate the volume: A cuboid with length 3 units, width 2 units, and height 4 units",
+      options: ["6", "12", "24", "48"],
+      answer: "24"
+    },
+    {
+      question: "Calculate the volume: A cone with a radius of 2 units and height of 5 units (use 3.14 for π)",
+      options: ["6.28", "10.47", "20.94", "41.88"],
+      answer: "20.94"
     }
-  ];
+    ];
 
   const questionContainer = document.getElementById('question');
   const optionsContainer = document.getElementById('options');
@@ -99,7 +114,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     question.options.forEach(option => {
       const button = document.createElement('button');
-      button.innerText = option;
+      button.innerHTML = `<button>${option}</button>
+      <style>
+      button {
+        background-color: #232e33;
+        border-style:hidden;
+        color: white;
+        font-size: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      </style>`;
+      // The code to style the buttons
       optionsContainer.appendChild(button);
       button.addEventListener("click", () => selectAnswer(option));
     });
@@ -109,11 +136,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const answer = quizData[currentQuestion].answer;
     const answerText = document.createElement('p');
 
+  // Pls fix this bro
     if (selectedOption === answer) {
-      answerText.textContent = "Correct!";
+      answerText.innerHTML = `<p>Correct!</p>
+      <style>
+        p {
+          position: fixed;
+          bottom: 400px;
+          color: black;
+        }
+      </style>`;
       score++;
     } else {
-      answerText.textContent = "Incorrect!";
+      answerText.innerHTML = `<p>Incorrect!</p>
+        <style>
+          p {
+            position: fixed;
+            bottom: 400px;
+          }
+        </style>`;
     }
 
     optionsContainer.appendChild(answerText);
@@ -124,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       showResult();
     }
+
   }
 
   function showResult() {
@@ -136,3 +178,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   showQuestion();
 });
+
+
+/*
+Add this as well, basically, the image will show when it hits a certain question, as the user advances, it changes images and gets scarier...
+
+if (currentQuestion == 5) {  
+answerText.insertAdjacentHTML("afterend", `<img src=Photo/Image2.heic>`);
+}
+*/
